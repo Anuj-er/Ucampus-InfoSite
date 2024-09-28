@@ -11,7 +11,7 @@ export const GearIcon = () => {
     >
       <path
         d="M32 8L26 4H14L8 8L4 16L8 18V36H32V18L36 16L32 8ZM22 8H18V12H22V8Z"
-        fill="#554DF1"
+        fill="#ec5464"
       />
     </svg>
   );

@@ -21,7 +21,7 @@ export const ButtonStyled = styled.a`
   height: 60px;
   border: 1px solid transparent;
   ${({ transparent, theme }) =>
-    transparent && `border-color: ${theme.colors["blue"]}`};
+    transparent && `border-color: ${theme.colors["red"]}`};
   font-weight: 500;
   padding: 12px 20px;
   ${({ center }) => center && "margin: 0 auto;"};
