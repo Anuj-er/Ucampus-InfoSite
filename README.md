@@ -33,13 +33,24 @@ Welcome to the **Ucampus-Infosite**! This website serves as a comprehensive hub 
 ---
 
 ## 📸 Screenshots
-![Homepage Screenshot](./public/screenshots/homepage.png)  
-*Homepage of Ucampus-Infosite*
 
-![Download Section Screenshot](./public/screenshots/download.png)  
-*Download section for the Ucampus app*
-
----
+<div style="text-align: center; font-size: 24px;">
+    <h1>Homepage of Ucampus-Infosite</h1>
+    <img src="./public/screenshots/homepage.png" alt="Homepage Screenshot" width="1000" style="margin: 10px;" />  
+    <br>
+    <h2>Explore section of the Ucampus app</h2>
+    <img src="./public/screenshots/explore.png" alt="Explore Screenshot" width="1000" style="margin: 10px;" />  
+    <br>
+    <h2>Food outlet details in the Ucampus app</h2>
+    <img src="./public/screenshots/food_outlet.png" alt="Food Outlet Screenshot" width="1000" style="margin: 10px;" />  
+    <br>
+    <h2>Payment section of the Ucampus app</h2>
+    <img src="./public/screenshots/payment.png" alt="Payment Screenshot" width="1000" style="margin: 10px;" />  
+    <br>
+    <h2>Overview of available outlets</h2>
+    <img src="./public/screenshots/outlets.png" alt="Outlets Screenshot" width="1000" style="margin: 10px;" />  
+    <br>
+</div>
 
 ## 🛠️ Installation
 Follow these simple steps to set up the project on your local machine:
