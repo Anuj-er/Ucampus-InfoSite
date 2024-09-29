@@ -21,17 +21,3 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-@media (max-width: 768px) {
-  .loader-gif {
-    width: 30vw;
-    height: 30vw;
-  }
-}
-
-@media (max-width: 480px) {
-  .loader-gif {
-    width: 40vw;
-    height: 40vw;
-  }
-}
