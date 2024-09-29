@@ -329,7 +329,7 @@ export const ColumnTitle = styled.div`
     margin-top: 11px;
   }
   @media (max-width: 640px) {
-    font-size: 5.625vw;
+    font-size: 3.625vw;
   }
  
 `;
@@ -346,7 +346,7 @@ export const ColumnText = styled.div`
     margin-top: 5px;
   }
   @media (max-width: 640px) {
-    font-size: 3.75vw;
+    font-size: 3vw;
     line-height: 20px;
     margin-top: 1.5vw;
   }
