@@ -1,14 +1,11 @@
 import React from "react";
-import "./Loader.css"; // Link the CSS for styling
-import loaderGif from './Loader.gif'; // Adjust the path to your GIF
+import "./Loader.css"; // Make sure this file exists for additional styling
+import loaderGif from './Loader.gif'; // Import your loader GIF
 
 const Loader = () => {
   return (
     <div id="loader">
-      <div
-        className="loader-gif"
-        style={{ backgroundImage: `url(${loaderGif})` }} // Use inline style
-      ></div>
+      <img src={loaderGif} alt="Loading..." className="loader-gif" />
     </div>
   );
 };
