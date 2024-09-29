@@ -130,29 +130,29 @@ const Gallery = () => {
             )}
             {isMobile
               ? <ImageWrapper
-                ref={happinessPicRef}
-                style={!isMobile ? { marginLeft: 60 } : {}}
-                happiness
-              >
-                <ImageStyled wide={1} src={happinessPic} alt="happiness" />
-              </ImageWrapper>
-              :
-              <ImageWrapper
-                ref={stwoPicRef}
-                style={!isMobile ? { marginLeft: 60 } : {}}
+                ref={stwoPicRef}  // Mobile: show stwoPic
+                style={{ marginLeft: 0 }}  // Optional mobile-specific styling
                 stwo
               >
                 <ImageStyled wide={1} src={stwoPic} alt="stwo" />
               </ImageWrapper>
-
+              : <>
+                <ImageWrapper
+                  ref={stwoPicRef}  // Desktop: show stwoPic
+                  style={{ marginLeft: 60 }}  // Optional desktop-specific styling
+                  stwo
+                >
+                  <ImageStyled wide={1} src={stwoPic} alt="stwo" />
+                </ImageWrapper>
+              </>
             }
             {!isMobile ? (
               <Content four>
-              <Title>Circle One</Title>
-              <Text width={365}>
-                Circle One is home to Barista, offering a cozy spot for coffee lovers. Whether it's a quick caffeine fix or a relaxed coffee break, enjoy your favorite brew at Circle One.
-              </Text>
-            </Content>
+                <Title>Circle One</Title>
+                <Text width={365}>
+                  Circle One is home to Barista, offering a cozy spot for coffee lovers. Whether it's a quick caffeine fix or a relaxed coffee break, enjoy your favorite brew at Circle One.
+                </Text>
+              </Content>
             ) : (
               <Content third>
                 <Title>Square Two</Title>
@@ -182,11 +182,11 @@ const Gallery = () => {
         <Row ref={thirdRowRef}>
           {isMobile && (
             <Content four>
-            <Title>Circle One</Title>
-            <Text width={365}>
-              Circle One is home to Barista, offering a cozy spot for coffee lovers. Whether it's a quick caffeine fix or a relaxed coffee break, enjoy your favorite brew at Circle One.
-            </Text>
-          </Content>
+              <Title>Circle One</Title>
+              <Text width={365}>
+                Circle One is home to Barista, offering a cozy spot for coffee lovers. Whether it's a quick caffeine fix or a relaxed coffee break, enjoy your favorite brew at Circle One.
+              </Text>
+            </Content>
           )}
           <ImageWrapper
             ref={chitkaraPicRef}
