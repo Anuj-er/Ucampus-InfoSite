@@ -12,15 +12,12 @@ function App() {
 
   // Simulate loading effect for the app
   useEffect(() => {
-    const handleLoad = () => {
-      // Start the timer
-      setTimeout(() => {
-        setLoading(false); // Hide loader after 4 seconds
-      }, 4000);
-    };
+    const timer = setTimeout(() => {
+      setLoading(false); // Hide loader after 4 seconds
+    }, 4000);
 
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
+    // Cleanup function to clear the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (
